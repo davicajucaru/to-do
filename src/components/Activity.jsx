@@ -17,6 +17,11 @@ const Activity = ({ todo }) => {
     <li style={{ textDecoration: todo.isCompleted ? "line-through" : "none" }}>
       {todo.title}
       <div>
+        <select name="" id="">
+          <option value="">To Do</option>
+          <option value="">In progress</option>
+          <option value="">Done</option>
+        </select>
         <button id="done" onClick={handleToggle}>
           <img alt="done" src="/correct-symbol.svg" />
         </button>
